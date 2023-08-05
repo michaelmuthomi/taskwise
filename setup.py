@@ -16,7 +16,7 @@ setup(
     keywords="taskwise, cli, task management",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/ArjanCodes/2023-package",
+    url="https://github.com/elamandeep/taskwise/",
     author="Aman Deep",
     author_email="deep.aman6174@gmail.com",
     license="MIT",
