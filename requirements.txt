@@ -1,0 +1,12 @@
+click==8.1.6
+colorama @ file:///work/ci_py311/colorama_1676827038675/work
+markdown-it-py==3.0.0
+mdurl==0.1.2
+prompt-toolkit==3.0.39
+Pygments==2.15.1
+questionary==1.10.0
+rich==13.5.2
+shellingham==1.5.0.post1
+typer==0.9.0
+typing_extensions==4.7.1
+wcwidth==0.2.6

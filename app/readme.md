@@ -1,0 +1,1 @@
+*Taskwise is a CLI application for managing tasks through command line*

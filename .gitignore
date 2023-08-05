@@ -1,0 +1,5 @@
+app/taskwise/database.db
+app/taskwise/__pycache__
+build
+dist
+taskwise.egg-info
