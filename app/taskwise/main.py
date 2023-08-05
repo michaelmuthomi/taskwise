@@ -1,28 +1,45 @@
+"""
+Taskwise
+"""
+import time
+import sys
+
 import typer
-from rich import print
+import rich
 from rich.progress import track
 from questionary import Choice, Style, select
-import time
-import os
-from taskwise.functions import display_all_tasks , update_task, insert_new_task , delete_task, loader
+
+from taskwise.functions import (
+    display_all_tasks,
+    update_task,
+    insert_new_task,
+    delete_task,
+    loader
+)
 
 
 def greet():
     """
-    This function greets users...
+    Greets users
     """
     time.sleep(0.1)
-    print("[red]Welcome to TaskWise!")
+    rich.print("[red]Welcome to TaskWise!")
 
-    for value in track(range(100), description="Loading..."):
+    for _ in track(range(5), description="Loading..."):
         time.sleep(0.02)
-    
+
+
+def clear_terminal():
+    """
+    Clears the terminal
+    """
+
 
 def menu():
     """
-    This function displays menu
+    Displays menu
     """
-    os.system("clear")
+    clear_terminal()
 
     custom_style = Style([
         ("display", "fg:#f44336 bold"),
@@ -32,17 +49,23 @@ def menu():
         ("exit", "fg:#6bf716 italic"),
     ])
     choices = [
-                Choice(title=[("class:display", "Display all Tasks")], value="display"),
-               Choice(title=[("class:insert", "Insert New Task")], value="insert"),
-               Choice(title=[("class:update", "Update Task")], value="update"),
-               Choice(title=[("class:delete", "Delete Task")], value="delete"),
-               Choice(title=[("class:exit", "Exit")], value="exit"),
+                    Choice(title=[("class:display", "Display all Tasks")],
+                           value="display"),
+                    Choice(title=[("class:insert", "Insert New Task")],
+                           value="insert"),
+                    Choice(title=[("class:update", "Update Task")],
+                           value="update"),
+                    Choice(title=[("class:delete", "Delete Task")],
+                           value="delete"),
+                    Choice(title=[("class:exit", "Exit")],
+                           value="exit"),
                ]
     answer = select(
-    "What do you want to do?",
-    choices=choices,
-    style=custom_style).ask()    
-    
+        "What do you want to do?",
+        choices=choices,
+        style=custom_style
+    ).ask()
+
     match answer:
         case "display":
             display_all_tasks()
@@ -54,14 +77,18 @@ def menu():
             delete_task()
         case "exit":
             loader("Exiting...")
-            exit()
+            sys.exit()
+
 
 def main():
+    """
+    Main function
+    """
     greet()
-    
     while True:
         menu()
         time.sleep(0.5)
+
 
 if __name__ == "__main__":
     typer.run(main)
