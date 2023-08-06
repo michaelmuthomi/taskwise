@@ -34,16 +34,32 @@ Some of the features include:
 
 ### Installation
 
-- In your teminal
+ - Clone The Repository
 
+```
+git clone https://github.com/elamandeep/taskwise
+```
+ - Cd into the cloned repo
+```
+cd taskwise
+```
+ - Install the Dependencies
+```
+pip install requirements.txt
+```
+> Using PIP to Install
 ```
 pip install -i https://test.pypi.org/simple/ taskwise
 ```
 
+
 ### Usage
-- Include it in your project
 ```
 from .taskwise import main
+
+main() # Starts the Application
+menu() # Displays The Menu
+greet() # Prints out welcome message
 ```
 
 
