@@ -47,10 +47,11 @@ cd taskwise
 ```
 pip install requirements.txt
 ```
+
 > Using PIP to Install
-```
-pip install -i https://test.pypi.org/simple/ taskwise
-```
+> ```
+> pip install -i https://test.pypi.org/simple/ taskwise
+> ```
 
 
 ### Usage
