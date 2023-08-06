@@ -57,6 +57,7 @@ This project is licensed under the MIT License.
 ## Acknowledgements
 
 This project exists thanks to all the people who contribute.
+
 <a href="https://github.com/elamandeep/taskwise/graphs/contributors">
 <img src="https://contrib.rocks/image?repo=elamandeep/taskwise" />
 </a>
