@@ -33,6 +33,7 @@ def clear_terminal():
     """
     Clears the terminal
     """
+    print("\x1b[2J\x1b[H")
 
 
 def menu():
