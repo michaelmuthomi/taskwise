@@ -6,22 +6,21 @@
 
 </div>
 
-### About
-
-Taskwise is a command line based application for managing tasks. Some of the key Features include:
-
 ## Table of Contents
 
+- [About](#about)
 - [Features](#features)
 - [Getting Started](#getting-started)
   - [Installation](#installation)
   - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 - [Acknowledgements](#acknowledgements)
+- [License](#license)
 
-## Features
-Some of the features include:
+## About
+
+Taskwise is a command line based application for keeping track of your tasks. Some of the key features include:
+
  - Displaying Tasks
  - Updating Tasks
  - Insertng Tasks
@@ -63,18 +62,17 @@ menu() # Displays The Menu
 greet() # Prints out welcome message
 ```
 
-
 ## Contributing
-Feel free to contrubute.
-
-## License
-
-This project is licensed under the MIT License.
+Feel free to open a pull request or issue to contribute. Your contributions are appreciated!
 
 ## Acknowledgements
 
-This project exists thanks to all the people who contribute.
+This project has been made possible thanks to all contributors
 
 <a href="https://github.com/elamandeep/taskwise/graphs/contributors">
 <img src="https://contrib.rocks/image?repo=elamandeep/taskwise" />
 </a>
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
